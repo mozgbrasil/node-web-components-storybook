@@ -1,4 +1,4 @@
-import{f as x,u as f,i as v,a as y,x as b}from"./iframe-DGXKmtGt.js";import"./index-nuYtCEEu.js";/**
+import{f as x,u as f,i as v,a as y,x as b}from"./iframe-CAcXjiyQ.js";import"./index-nuYtCEEu.js";/**
  * @license
  * Copyright 2017 Google LLC
  * SPDX-License-Identifier: BSD-3-Clause
@@ -20,7 +20,7 @@ import{f as x,u as f,i as v,a as y,x as b}from"./iframe-DGXKmtGt.js";import"./in
         <div class="botoes-container">
           <button
             class="btn btn-incrementar"
-            @click=${this.incrementarContador}
+            @click="${this.incrementarContador}"
             aria-label="Incrementar contador"
           >
             + Incrementar
@@ -28,13 +28,17 @@ import{f as x,u as f,i as v,a as y,x as b}from"./iframe-DGXKmtGt.js";import"./in
 
           <button
             class="btn btn-resetar"
-            @click=${this.resetarContador}
+            @click="${this.resetarContador}"
             aria-label="Resetar contador"
           >
             🔄 Resetar
           </button>
 
-          <button class="btn btn-tema" @click=${this.alternarTema} aria-label="Alternar tema">
+          <button
+            class="btn btn-tema"
+            @click="${this.alternarTema}"
+            aria-label="Alternar tema"
+          >
             ${this.tema==="light"?"🌙":"☀️"} Tema
           </button>
         </div>
@@ -47,8 +51,12 @@ import{f as x,u as f,i as v,a as y,x as b}from"./iframe-DGXKmtGt.js";import"./in
       padding: 24px;
       border: 2px solid var(--border-color, #e1e5e9);
       border-radius: 16px;
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      background: var(--bg-color, linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%));
+      font-family:
+        -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(
+        --bg-color,
+        linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%)
+      );
       box-shadow: var(--shadow, 0 8px 25px rgba(0, 0, 0, 0.1));
       transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
       max-width: 400px;
@@ -102,7 +110,10 @@ import{f as x,u as f,i as v,a as y,x as b}from"./iframe-DGXKmtGt.js";import"./in
     .contador-container {
       margin: 24px 0;
       padding: 20px;
-      background: var(--contador-bg, linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%));
+      background: var(
+        --contador-bg,
+        linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%)
+      );
       border-radius: 12px;
       border: 1px solid var(--contador-border, #e2e8f0);
     }
@@ -239,16 +250,18 @@ import{f as x,u as f,i as v,a as y,x as b}from"./iframe-DGXKmtGt.js";import"./in
     }
   `;g([h({type:String})],s.prototype,"nome",2);g([h({type:String})],s.prototype,"tema",2);g([z()],s.prototype,"contador",2);s=g([w("mozg-meu-componente-lit")],s);const T={title:"Components/MeuComponenteLit",component:"mozg-meu-componente-lit",tags:["autodocs"],argTypes:{nome:{control:"text",description:"Nome a ser exibido no componente",defaultValue:"Lit!"},tema:{control:"select",options:["light","dark"],description:"Tema do componente",defaultValue:"light"},contador:{control:{type:"number",min:0},description:"Valor inicial do contador",table:{type:{summary:"number"},defaultValue:{summary:0}}}},render:e=>b`
     <mozg-meu-componente-lit
-      nome=${e.nome}
-      tema=${e.tema}
-      .contador=${e.contador}
-      @contador-change=${t=>console.log("Contador mudou:",t.detail)}
+      nome="${e.nome}"
+      tema="${e.tema}"
+      .contador="${e.contador}"
+      @contador-change="${t=>console.log("Contador mudou:",t.detail)}"
     >
       <div
         slot=""
         style="margin-top: 1rem; padding: 1rem; background: #f0f8ff; border-radius: 4px; border-left: 4px solid #4a90e2;"
       >
-        <p style="margin: 0; color: #2c3e50; font-size: 0.9em;">Conteúdo adicional via slot</p>
+        <p style="margin: 0; color: #2c3e50; font-size: 0.9em;">
+          Conteúdo adicional via slot
+        </p>
       </div>
     </mozg-meu-componente-lit>
   `},c={args:{nome:"Lit Component",tema:"light",contador:0},parameters:{docs:{description:{story:"Componente padrão com tema claro e contador zerado."}}}},m={args:{nome:"Dark Mode",tema:"dark",contador:5},parameters:{backgrounds:{default:"dark"},docs:{description:{story:"Componente com tema escuro e contador inicial em 5."}}}},p={args:{nome:"Contador Alto",tema:"light",contador:25},parameters:{docs:{description:{story:"Componente com um valor inicial alto no contador."}}}},l={render:()=>b`
@@ -260,19 +273,19 @@ import{f as x,u as f,i as v,a as y,x as b}from"./iframe-DGXKmtGt.js";import"./in
         <mozg-meu-componente-lit
           nome="Tarefas"
           tema="light"
-          .contador=${5}
+          .contador="${5}"
         ></mozg-meu-componente-lit>
 
         <mozg-meu-componente-lit
           nome="Notificações"
           tema="dark"
-          .contador=${12}
+          .contador="${12}"
         ></mozg-meu-componente-lit>
 
         <mozg-meu-componente-lit
           nome="Mensagens"
           tema="light"
-          .contador=${3}
+          .contador="${3}"
         ></mozg-meu-componente-lit>
       </div>
     </div>
@@ -328,19 +341,19 @@ import{f as x,u as f,i as v,a as y,x as b}from"./iframe-DGXKmtGt.js";import"./in
         <mozg-meu-componente-lit
           nome="Tarefas"
           tema="light"
-          .contador=\${5}
+          .contador="\${5}"
         ></mozg-meu-componente-lit>
 
         <mozg-meu-componente-lit
           nome="Notificações"
           tema="dark"
-          .contador=\${12}
+          .contador="\${12}"
         ></mozg-meu-componente-lit>
 
         <mozg-meu-componente-lit
           nome="Mensagens"
           tema="light"
-          .contador=\${3}
+          .contador="\${3}"
         ></mozg-meu-componente-lit>
       </div>
     </div>

@@ -1,4 +1,4 @@
-import{x as m}from"./iframe-DGXKmtGt.js";import{e as p,j as e}from"./index-ewikmuNB.js";import{R as l}from"./client-CBaSfb8C.js";import"./index-nuYtCEEu.js";import"./_commonjsHelpers-Cpj98o6Y.js";const u=({titulo:o="Olá, React!",nome:t="mundo"})=>e.jsxs("div",{className:"meu-componente-react",children:[e.jsx("style",{children:`
+import{x as m}from"./iframe-CAcXjiyQ.js";import{e as p,j as e}from"./index-ewikmuNB.js";import{R as l}from"./client-CBaSfb8C.js";import"./index-nuYtCEEu.js";import"./_commonjsHelpers-Cpj98o6Y.js";const u=({titulo:o="Olá, React!",nome:t="mundo"})=>e.jsxs("div",{className:"meu-componente-react",children:[e.jsx("style",{children:`
           .meu-componente-react {
             display: block;
             padding: 16px;
@@ -35,14 +35,14 @@ import{x as m}from"./iframe-DGXKmtGt.js";import{e as p,j as e}from"./index-ewikm
             background-color: #0056b3;
           }
         `}),e.jsx("h1",{children:o}),e.jsxs("p",{children:["Aqui é ",t]}),e.jsx("slot",{})]});class i extends HTMLElement{constructor(){super(),this.root=null,this.shadow=this.attachShadow({mode:"open"})}static{this.tag="mozg-meu-componente-react"}static get observedAttributes(){return["titulo","nome"]}connectedCallback(){this.render()}attributeChangedCallback(t,d,c){d!==c&&this.render()}disconnectedCallback(){this.root?.unmount()}render(){const t={titulo:this.getAttribute("titulo")||void 0,nome:this.getAttribute("nome")||void 0};this.root||(this.root=l.createRoot(this.shadow)),this.root.render(p.createElement(u,t))}}const g=()=>{const o=i.tag;customElements.get(o)||(customElements.define(o,i),console.log(`✅ Componente React registrado: ${o}`))};g();const z={title:"Components/MeuComponenteReact",component:"mozg-meu-componente-react",tags:["autodocs"],argTypes:{titulo:{control:"text",description:"Título do componente",defaultValue:"Olá, React!"},nome:{control:"text",description:"Nome a ser exibido no componente",defaultValue:"mundo"}},render:o=>m`
-    <mozg-meu-componente-react titulo=${o.titulo} nome=${o.nome}>
+    <mozg-meu-componente-react titulo="${o.titulo}" nome="${o.nome}">
       <div slot="">
         <p>Conteúdo adicional via slot</p>
         <button>Botão personalizado</button>
       </div>
     </mozg-meu-componente-react>
   `},n={args:{titulo:"Bem-vindo ao React",nome:"Visitante"},parameters:{docs:{description:{story:"Componente React padrão com título e nome personalizáveis."}}}},r={args:{titulo:"Este é um título muito longo para demonstrar como o componente lida com textos extensos",nome:"Usuário com nome longo também"},parameters:{docs:{description:{story:"Demonstração do componente com textos longos para testar o comportamento de layout."}}}},a={args:{titulo:"Conteúdo Personalizado",nome:"Usuário"},render:o=>m`
-    <mozg-meu-componente-react titulo=${o.titulo} nome=${o.nome}>
+    <mozg-meu-componente-react titulo="${o.titulo}" nome="${o.nome}">
       <div
         slot=""
         style="margin-top: 1rem; padding: 1rem; background: #f0f0f0; border-radius: 4px;"
@@ -64,14 +64,18 @@ import{x as m}from"./iframe-DGXKmtGt.js";import{e as p,j as e}from"./index-ewikm
       >
         <mozg-meu-componente-react titulo="Tarefas Pendentes" nome="Usuário">
           <div slot="" style="text-align: center; padding: 1rem;">
-            <div style="font-size: 2em; font-weight: bold; color: #007bff;">12</div>
+            <div style="font-size: 2em; font-weight: bold; color: #007bff;">
+              12
+            </div>
             <div>tarefas para hoje</div>
           </div>
         </mozg-meu-componente-react>
 
         <mozg-meu-componente-react titulo="Mensagens" nome="Usuário">
           <div slot="" style="text-align: center; padding: 1rem;">
-            <div style="font-size: 2em; font-weight: bold; color: #28a745;">5</div>
+            <div style="font-size: 2em; font-weight: bold; color: #28a745;">
+              5
+            </div>
             <div>novas mensagens</div>
           </div>
         </mozg-meu-componente-react>
@@ -107,7 +111,7 @@ import{x as m}from"./iframe-DGXKmtGt.js";import{e as p,j as e}from"./index-ewikm
     nome: 'Usuário'
   },
   render: args => html\`
-    <mozg-meu-componente-react titulo=\${args.titulo} nome=\${args.nome}>
+    <mozg-meu-componente-react titulo="\${args.titulo}" nome="\${args.nome}">
       <div
         slot=""
         style="margin-top: 1rem; padding: 1rem; background: #f0f0f0; border-radius: 4px;"
@@ -138,14 +142,18 @@ import{x as m}from"./iframe-DGXKmtGt.js";import{e as p,j as e}from"./index-ewikm
       >
         <mozg-meu-componente-react titulo="Tarefas Pendentes" nome="Usuário">
           <div slot="" style="text-align: center; padding: 1rem;">
-            <div style="font-size: 2em; font-weight: bold; color: #007bff;">12</div>
+            <div style="font-size: 2em; font-weight: bold; color: #007bff;">
+              12
+            </div>
             <div>tarefas para hoje</div>
           </div>
         </mozg-meu-componente-react>
 
         <mozg-meu-componente-react titulo="Mensagens" nome="Usuário">
           <div slot="" style="text-align: center; padding: 1rem;">
-            <div style="font-size: 2em; font-weight: bold; color: #28a745;">5</div>
+            <div style="font-size: 2em; font-weight: bold; color: #28a745;">
+              5
+            </div>
             <div>novas mensagens</div>
           </div>
         </mozg-meu-componente-react>
