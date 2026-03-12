@@ -1,8 +1,8 @@
 class W extends HTMLElement{static{this.tag="mozg-monitor-connectivity"}constructor(){super(),this.attachShadow({mode:"open"})}connectedCallback(){this.css(),this.html(),this.js()}disconnectedCallback(){for(;this.shadowRoot.firstChild;)this.shadowRoot.removeChild(this.shadowRoot.firstChild)}static get observedAttributes(){return["toggle","another-attribute"]}attributeChangedCallback(t,e,o){}adoptedCallback(){}css(){const t=document.createElement("style");t.textContent=`
-    `,this.shadowRoot.appendChild(t)}js(){const t=o=>{navigator.serviceWorker.ready.then(s=>{s.active?.postMessage({type:"connectivityNotification",data:{title:"Estado de Conectividade",body:`Você está ${o}.`,icon:"/icon.png"}})})};(async()=>{try{window.addEventListener("online",()=>{t("Online")}),window.addEventListener("offline",()=>{t("Offline")})}catch(o){console.error(`Registration failed with ${o}`)}})()}html(){const e=document.createRange().createContextualFragment(` 
+    `,this.shadowRoot.appendChild(t)}js(){const t=o=>{navigator.serviceWorker.ready.then(s=>{s.active?.postMessage({type:"connectivityNotification",data:{title:"Estado de Conectividade",body:`Você está ${o}.`,icon:"/icon.png"}})})};(async()=>{try{window.addEventListener("online",()=>{t("Online")}),window.addEventListener("offline",()=>{t("Offline")})}catch(o){console.error(`Registration failed with ${o}`)}})()}html(){const e=document.createRange().createContextualFragment(`
    `);this.shadowRoot.appendChild(e)}}const b=W.tag;customElements.get(b)||customElements.define(b,W);class F extends HTMLElement{static{this.tag="mozg-service-worker"}constructor(){super(),this.attachShadow({mode:"open"})}connectedCallback(){this.css(),this.html(),this.js()}disconnectedCallback(){for(;this.shadowRoot.firstChild;)this.shadowRoot.removeChild(this.shadowRoot.firstChild)}static get observedAttributes(){return["toggle","another-attribute"]}attributeChangedCallback(t,e,o){}adoptedCallback(){}css(){const t=document.createElement("style");t.textContent=`
     `,this.shadowRoot.appendChild(t)}js(){(async()=>{if(!document.querySelector("link[rel='manifest']")){console.error("Manifest não encontrado! Algumas funcionalidades do PWA podem não funcionar.");return}})(),(async()=>{if("serviceWorker"in navigator)try{navigator.serviceWorker.getRegistrations().then(async o=>{if(o.length===0){const s=await navigator.serviceWorker.register("service-worker.js",{scope:"./"});s.installing||s.waiting||s.active}})}catch(o){console.error(`Registration failed with ${o}`)}})()}html(){const e=document.createRange().createContextualFragment(`
-   `);this.shadowRoot.appendChild(e)}}const C=F.tag;customElements.get(C)||customElements.define(C,F);class M extends HTMLElement{static{this.tag="mozg-a2hs"}constructor(){super(),this.attachShadow({mode:"open"})}connectedCallback(){this.css(),this.html(),this.js()}disconnectedCallback(){if(this.shadowRoot)for(;this.shadowRoot.firstChild;)this.shadowRoot.removeChild(this.shadowRoot.firstChild)}static get observedAttributes(){return["toggle","another-attribute"]}attributeChangedCallback(t,e,o){}adoptedCallback(){}css(){const t=document.createElement("style");t.textContent=`  
+   `);this.shadowRoot.appendChild(e)}}const C=F.tag;customElements.get(C)||customElements.define(C,F);class M extends HTMLElement{static{this.tag="mozg-a2hs"}constructor(){super(),this.attachShadow({mode:"open"})}connectedCallback(){this.css(),this.html(),this.js()}disconnectedCallback(){if(this.shadowRoot)for(;this.shadowRoot.firstChild;)this.shadowRoot.removeChild(this.shadowRoot.firstChild)}static get observedAttributes(){return["toggle","another-attribute"]}attributeChangedCallback(t,e,o){}adoptedCallback(){}css(){const t=document.createElement("style");t.textContent=`
     a {
     text-decoration: none;
     width: 50px;
@@ -22,9 +22,9 @@ class W extends HTMLElement{static{this.tag="mozg-monitor-connectivity"}construc
     `,this.shadowRoot.appendChild(t)}js(){(e=>{const o=document.createElement("canvas");o.width=64,o.height=64;const s=o.getContext("2d");if(!s)return;const a=new Image;a.src="logo-mini.png",a.onload=()=>{s.drawImage(a,0,0,64,64),s.fillStyle="#4fa3da",s.beginPath(),s.arc(50,14,14,0,2*Math.PI),s.fill(),s.fillStyle="white",s.font="bold 14px Arial",s.fillText(e,43,18);const c=document.querySelectorAll("link[rel~='icon']");if(c.length===0){const h=document.createElement("link");h.rel="icon",h.href=o.toDataURL("image/png"),document.head.appendChild(h)}else c.forEach(h=>{h.href=o.toDataURL("image/png")})}})("5")}html(){const e=document.createRange().createContextualFragment(`
    `);this.shadowRoot.appendChild(e)}}const y=j.tag;customElements.get(y)||customElements.define(y,j);class A extends HTMLElement{static{this.tag="mozg-fullscreen"}constructor(){super(),this.attachShadow({mode:"open"})}connectedCallback(){this.css(),this.html(),this.js()}disconnectedCallback(){if(this.shadowRoot)for(;this.shadowRoot.firstChild;)this.shadowRoot.removeChild(this.shadowRoot.firstChild)}static get observedAttributes(){return["toggle","another-attribute"]}attributeChangedCallback(t,e,o){}adoptedCallback(){}css(){const t=document.createElement("style");t.textContent=`
     :host {
-      
+
     }
-    
+
     a {
     text-decoration: none;
     }
@@ -32,9 +32,9 @@ class W extends HTMLElement{static{this.tag="mozg-monitor-connectivity"}construc
     a img {
       width: 50px;
     }
-    `,this.shadowRoot.appendChild(t)}js(){(async()=>{const e=this.shadowRoot.querySelector("#fullscreenBtn");e&&e.addEventListener("click",async()=>{document.fullscreenElement?document.exitFullscreen&&(await document.exitFullscreen(),e.src="https://icons.iconarchive.com/icons/pictogrammers/material-light/256/fullscreen-icon.png"):document.documentElement.requestFullscreen?(document.documentElement.requestFullscreen().then(()=>{}).catch(o=>console.error("Erro ao entrar em tela cheia:",o)),e.src="https://icons.iconarchive.com/icons/pictogrammers/material-light/256/fullscreen-exit-icon.png"):console.error("A API Fullscreen não é suportada neste navegador.")})})()}html(){const e=document.createRange().createContextualFragment(` 
+    `,this.shadowRoot.appendChild(t)}js(){(async()=>{const e=this.shadowRoot.querySelector("#fullscreenBtn");e&&e.addEventListener("click",async()=>{document.fullscreenElement?document.exitFullscreen&&(await document.exitFullscreen(),e.src="https://icons.iconarchive.com/icons/pictogrammers/material-light/256/fullscreen-icon.png"):document.documentElement.requestFullscreen?(document.documentElement.requestFullscreen().then(()=>{}).catch(o=>console.error("Erro ao entrar em tela cheia:",o)),e.src="https://icons.iconarchive.com/icons/pictogrammers/material-light/256/fullscreen-exit-icon.png"):console.error("A API Fullscreen não é suportada neste navegador.")})})()}html(){const e=document.createRange().createContextualFragment(`
     <a href="javascript:void(0)">
-      <img 
+      <img
         id="fullscreenBtn"
         src="https://icons.iconarchive.com/icons/pictogrammers/material-light/256/fullscreen-icon.png"
       />
@@ -125,7 +125,7 @@ class W extends HTMLElement{static{this.tag="mozg-monitor-connectivity"}construc
         box-shadow: inset 0 0 0.1em 0.1em;
       }
     `,this.shadowRoot.appendChild(t)}js(){function t(){return HTMLElement.prototype.hasOwnProperty("popover")}const e=this.shadowRoot.getElementById("popup");t()&&e&&document.addEventListener("keydown",a=>{a.key==="h"&&e.togglePopover?.()});const s=this.shadowRoot.querySelector('dialog[id^="popup"]');s&&(s.addEventListener("beforetoggle",function(a){a.newState==="open"||a.newState}),s.addEventListener("toggle",a=>{const c=a;c.newState==="open"||c.newState,this.toggleFunction&&new Function(this.toggleFunction)()}))}html(){const e=document.createRange().createContextualFragment(`
-    
+
     <button popovertarget="popup">Clique aqui</button>
 
     <dialog id="popup" popover="auto">
@@ -138,9 +138,9 @@ class W extends HTMLElement{static{this.tag="mozg-monitor-connectivity"}construc
     </dialog>
    `);this.shadowRoot.appendChild(e)}}const x=H.tag;customElements.get(x)||customElements.define(x,H);class V extends HTMLElement{static{this.tag="mozg-web-share"}constructor(){super(),this.attachShadow({mode:"open"})}connectedCallback(){this.css(),this.html(),this.js()}disconnectedCallback(){if(this.shadowRoot)for(;this.shadowRoot.firstChild;)this.shadowRoot.removeChild(this.shadowRoot.firstChild)}static get observedAttributes(){return["toggle","another-attribute"]}attributeChangedCallback(t,e,o){}adoptedCallback(){}css(){const t=document.createElement("style");t.textContent=`
     :host {
-      
+
     }
-    
+
     a {
     text-decoration: none;
     }
@@ -152,20 +152,20 @@ class W extends HTMLElement{static{this.tag="mozg-monitor-connectivity"}construc
           <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
       </svg>`,s=new Blob([o],{type:"image/svg+xml"}),a=new File([s],"imagem.svg",{type:"image/svg+xml"});navigator.share({url:window.location.href,title:"Isso pode te interessar!",text:"Clique no link para ver mais detalhes. 🚀"}).then(()=>{}).catch(c=>console.error("Erro ao compartilhar:",c))})}catch(e){console.error(`Registration failed with ${e}`)}})()}html(){const e=document.createRange().createContextualFragment(`
     <a href="javascript:void(0)">
-      <img 
+      <img
         id="shareBtn"
         src="https://icons.iconarchive.com/icons/icons8/ios7/256/Very-Basic-Shared-icon.png"
       />
     </a>
    `);this.shadowRoot.appendChild(e)}}const E=V.tag;customElements.get(E)||customElements.define(E,V);class B extends HTMLElement{static{this.tag="mozg-web-worker"}constructor(){super(),this.attachShadow({mode:"open"})}connectedCallback(){this.css(),this.html(),this.js()}disconnectedCallback(){if(this.shadowRoot)for(;this.shadowRoot.firstChild;)this.shadowRoot.removeChild(this.shadowRoot.firstChild)}static get observedAttributes(){return["toggle","another-attribute"]}attributeChangedCallback(t,e,o){}adoptedCallback(){}css(){const t=document.createElement("style");t.textContent=`
-    `,this.shadowRoot.appendChild(t)}js(){(async()=>{try{if(window.Worker){const e=new Worker("worker.js");e.postMessage([1,2]),e.onmessage=o=>{}}}catch(e){console.error(`Registration failed with ${e}`)}})()}html(){const e=document.createRange().createContextualFragment(` 
+    `,this.shadowRoot.appendChild(t)}js(){(async()=>{try{if(window.Worker){const e=new Worker("worker.js");e.postMessage([1,2]),e.onmessage=o=>{}}}catch(e){console.error(`Registration failed with ${e}`)}})()}html(){const e=document.createRange().createContextualFragment(`
    `);this.shadowRoot.appendChild(e)}}const S=B.tag;customElements.get(S)||customElements.define(S,B);class T extends HTMLElement{static{this.tag="mozg-window-management-api"}constructor(){super(),this.attachShadow({mode:"open"})}connectedCallback(){this.css(),this.html(),this.js()}disconnectedCallback(){if(this.shadowRoot)for(;this.shadowRoot.firstChild;)this.shadowRoot.removeChild(this.shadowRoot.firstChild)}static get observedAttributes(){return["mode"]}attributeChangedCallback(t,e,o){}adoptedCallback(){}css(){const t=document.createElement("style");t.textContent=`
     `,this.shadowRoot.appendChild(t)}js(){const t=[{name:" ",url:"https://mozg.com.br/"},{name:" ",url:"https://mozg.com.br/"},{name:" ",url:"https://mozg.com.br/"},{name:" ",url:"https://mozg.com.br/"}],e=this.shadowRoot.querySelector("section");let o,s=[];const a=51,c=1;"getScreenDetails"in window?(P(),$()):h(t);function h(i){const m=document.createElement("ul");i.forEach(u=>{const g=document.createElement("li"),n=document.createElement("a");n.textContent=u.name,n.href=u.url,g.appendChild(n),m.appendChild(g)}),e?.appendChild(m)}function P(){const i=document.createElement("button");i.textContent="Open learning environment",e?.appendChild(i),i.addEventListener("click",v)}function $(){o=document.createElement("div"),o.id="block-warning",o.popover="manual",o.innerHTML=`
     <h2>Please disable popup blocking</h2>
     <p>Your browser is blocking the app's popup windows. Please enable popups and then try again.
     You can do this by clicking the icon to the right of your web address bar, selecting the "Always allow..."
     option, then clicking "Done".</p>
-    
+
     <img src="popups-blocked.png" alt="Browser dialog window with title Popups blocked, showing options to allow popups or keep blocking them, with Done and Manage buttons at the bottom">
 
     <p><button id="popover-dismiss">OK, got it</button></p>
