@@ -1,4 +1,4 @@
-import{R as gf,a as vf,j as bn}from"./client-qfNJH_BN.js";import{r as fo}from"./custom-elements-CtzkolMy.js";import{g as di,f as mf,u as bf,i as yf,a as xf,b as wf}from"./iframe-Bgg4SsMD.js";const Ef=({titulo:e="Olá, React!",nome:t="mundo"})=>bn.jsxs("div",{className:"meu-componente-react",children:[bn.jsx("style",{children:`
+import{R as gf,a as vf,j as bn}from"./client-qfNJH_BN.js";import{r as fo}from"./custom-elements-CtzkolMy.js";import{g as di,f as mf,u as bf,i as yf,a as xf,b as wf}from"./iframe-CwYsIR-F.js";const Ef=({titulo:e="Olá, React!",nome:t="mundo"})=>bn.jsxs("div",{className:"meu-componente-react",children:[bn.jsx("style",{children:`
           .meu-componente-react {
             display: block;
             padding: 16px;
