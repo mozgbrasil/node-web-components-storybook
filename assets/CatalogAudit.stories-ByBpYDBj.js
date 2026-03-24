@@ -1,4 +1,4 @@
-import{b as o}from"./component-catalog-CuqOSlo7.js";function s(t){return t.replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;").replaceAll('"',"&quot;").replaceAll("'","&#39;")}const a=o("storybook-audit",void 0,"storybook-static"),c={title:"Catalog/Audit",tags:["autodocs"],parameters:{layout:"fullscreen"},render:()=>{const t=document.createElement("section");return t.className="catalog-page",t.innerHTML=`
+import{b as o}from"./component-catalog-CPMzjWDJ.js";function s(t){return t.replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;").replaceAll('"',"&quot;").replaceAll("'","&#39;")}const a=o("storybook-audit",void 0,"storybook-static"),c={title:"Catalog/Audit",tags:["autodocs"],parameters:{layout:"fullscreen"},render:()=>{const t=document.createElement("section");return t.className="catalog-page",t.innerHTML=`
       <header class="catalog-hero">
         <div>
           <p class="catalog-eyebrow">Catalog governance</p>
