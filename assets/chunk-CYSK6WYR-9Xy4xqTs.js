@@ -1,0 +1,1 @@
+import{n as e}from"./rolldown-runtime-BJ9pB_0e.js";var t,n,r=e((()=>{t=e=>`control-${e.replace(/\s+/g,`-`)}`,n=e=>`set-${e.replace(/\s+/g,`-`)}`}));export{n,r,t};
