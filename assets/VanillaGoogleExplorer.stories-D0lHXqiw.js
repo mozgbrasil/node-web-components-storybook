@@ -1,0 +1,5 @@
+import{n as e}from"./rolldown-runtime-BJ9pB_0e.js";import{a as t,i as n,o as r,t as i}from"./storybook-renderers-j32SvgxC.js";var a,o,s,c;e((()=>{r(),i(),a=t({group:`google`}),o={title:`Vanilla/Google Explorer`,tags:[`autodocs`],parameters:{layout:`fullscreen`},argTypes:{component:{control:`select`,options:a.map(e=>e.id)}},render:e=>n(a,{eyebrow:`Google / Firebase`,title:`Fluxos autenticados e integrações externas`,description:`Explorer para os componentes conectados ao ecossistema Google, com foco em estados visuais e dependências operacionais.`},e)},s={args:{component:`firebase-tools`}},s.parameters={...s.parameters,docs:{...s.parameters?.docs,source:{originalSource:`{
+  args: {
+    component: 'firebase-tools'
+  }
+}`,...s.parameters?.docs?.source}}},c=[`Playground`]}))();export{s as Playground,c as __namedExportsOrder,o as default};
