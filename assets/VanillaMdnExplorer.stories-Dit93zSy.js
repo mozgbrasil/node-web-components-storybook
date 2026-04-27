@@ -1,5 +1,0 @@
-import{n as e}from"./rolldown-runtime-BJ9pB_0e.js";import{a as t,i as n,o as r,t as i}from"./storybook-renderers-j32SvgxC.js";var a,o,s,c;e((()=>{r(),i(),a=t({group:`mdn`}),o={title:`Vanilla/MDN Explorer`,tags:[`autodocs`],parameters:{layout:`fullscreen`},argTypes:{component:{control:`select`,options:a.map(e=>e.id)}},render:e=>n(a,{eyebrow:`Browser APIs`,title:`Catálogo de recursos nativos do navegador`,description:`Galeria dedicada a componentes orientados por APIs modernas do browser, com destaque para dependências de suporte.`},e)},s={args:{component:`popover-api`}},s.parameters={...s.parameters,docs:{...s.parameters?.docs,source:{originalSource:`{
-  args: {
-    component: 'popover-api'
-  }
-}`,...s.parameters?.docs?.source}}},c=[`Playground`]}))();export{s as Playground,c as __namedExportsOrder,o as default};

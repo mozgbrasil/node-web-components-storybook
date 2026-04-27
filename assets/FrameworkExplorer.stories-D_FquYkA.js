@@ -1,5 +1,0 @@
-import{n as e}from"./rolldown-runtime-BJ9pB_0e.js";import{a as t,i as n,o as r,t as i}from"./storybook-renderers-j32SvgxC.js";var a,o,s,c;e((()=>{r(),i(),a=t({group:`framework`}),o={title:`Frameworks/Explorer`,tags:[`autodocs`],parameters:{layout:`fullscreen`},argTypes:{component:{control:`select`,options:a.map(e=>e.id)}},render:e=>n(a,{eyebrow:`Framework Adapters`,title:`Wrappers multiplataforma`,description:`Comparativo entre as implementações em React, Vue, Svelte e Lit convertidas para Custom Elements.`},e)},s={args:{component:`meu-componente-react`}},s.parameters={...s.parameters,docs:{...s.parameters?.docs,source:{originalSource:`{
-  args: {
-    component: 'meu-componente-react'
-  }
-}`,...s.parameters?.docs?.source}}},c=[`Playground`]}))();export{s as Playground,c as __namedExportsOrder,o as default};

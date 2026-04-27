@@ -1,4 +1,4 @@
-import{n as e}from"./rolldown-runtime-BJ9pB_0e.js";import{o as t,t as n}from"./catalog-Bsmtwg8G.js";function r(e){return e.replaceAll(`&`,`&amp;`).replaceAll(`<`,`&lt;`).replaceAll(`>`,`&gt;`).replaceAll(`"`,`&quot;`).replaceAll(`'`,`&#39;`)}var i,a,o,s;e((()=>{n(),i=t(`storybook-audit`,void 0,`storybook-static`),a={title:`Catalog/Audit`,tags:[`autodocs`],parameters:{layout:`fullscreen`},render:()=>{let e=document.createElement(`section`);return e.className=`catalog-page`,e.innerHTML=`
+import{n as e}from"./rolldown-runtime-Ps8w5BGs.js";import{o as t,t as n}from"./catalog-CmyIhdUG.js";function r(e){return e.replaceAll(`&`,`&amp;`).replaceAll(`<`,`&lt;`).replaceAll(`>`,`&gt;`).replaceAll(`"`,`&quot;`).replaceAll(`'`,`&#39;`)}var i,a,o,s;e((()=>{n(),i=t(`storybook-audit`,void 0,`storybook-static`),a={title:`Catalog/Audit`,tags:[`autodocs`],parameters:{layout:`fullscreen`},render:()=>{let e=document.createElement(`section`);return e.className=`catalog-page`,e.innerHTML=`
       <header class="catalog-hero">
         <div>
           <p class="catalog-eyebrow">Catalog governance</p>

@@ -1,5 +1,0 @@
-import{n as e}from"./rolldown-runtime-BJ9pB_0e.js";import{a as t,i as n,o as r,t as i}from"./storybook-renderers-j32SvgxC.js";var a,o,s,c;e((()=>{r(),i(),a=t(),o={title:`Catalog/Explorer`,tags:[`autodocs`],parameters:{layout:`fullscreen`},argTypes:{component:{control:`select`,options:a.map(e=>e.id),description:`Componente inicial selecionado ao abrir o explorer.`}},render:e=>n(a,{eyebrow:`Global Playground`,title:`Explorer geral de componentes`,description:`Ambiente único para navegar por todo o catálogo, alternar presets e inspecionar metadados técnicos.`},e)},s={args:{component:a[0]?.id}},s.parameters={...s.parameters,docs:{...s.parameters?.docs,source:{originalSource:`{
-  args: {
-    component: entries[0]?.id
-  }
-}`,...s.parameters?.docs?.source}}},c=[`Playground`]}))();export{s as Playground,c as __namedExportsOrder,o as default};
